@@ -28,7 +28,7 @@ function setup() {
   createCanvas(600,300);
  
   
-backGround = createSprite(300,50 ,600,300);
+backGround = createSprite(300,150,600,300);
 backGround.addImage(backImage);
 backGround.x = backGround.width /2;
 
@@ -43,7 +43,8 @@ go.scale = 0.7;
 go.visible = false; 
   
 ground = createSprite(300,300,600,30);
-ground.visible = false;
+ground.shapeColor = color(30,100,30); 
+
 player = createSprite(75,260,600,30);
 player.addAnimation("running", player_running);
 player.scale = 0.13;
